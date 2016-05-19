@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sliderScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/filterItemsLayout">
+
+            <TextView
+                style="@style/filterTitle"
+                android:text="@string/filter_title" />
+
+
+
+            <!--              sorteer op datum               -->
+            <TextView
+                style="@style/filterItem"
+                android:text="@string/filter_sorteren" />
+
+            <LinearLayout
+                style="@style/filter"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sorteren_type" />
+
+                <Switch
+                    android:id="@+id/sorteerSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sorteren_datum" />
+            </LinearLayout>
+
+
+            <!--              auto refresh                   -->
+            <TextView
+                style="@style/filterItem"
+                android:text="@string/filter_refresh" />
+
+            <LinearLayout
+                style="@style/filter"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/refreshCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refresh_text" />
+
+            </LinearLayout>
+
+
+
+            <!--              filter datum                  -->
+            <TextView
+                style="@style/filterItem"
+                android:text="filter op datum" />
+
+            <LinearLayout
+                style="@style/filter"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:scaleType="fitCenter"
+                    android:id="@+id/dateSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="5dp"
+        android:background="@android:color/holo_red_dark">
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/filterItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/filter_btnafmelden" />
+    </LinearLayout>
+</FrameLayout>

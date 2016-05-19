@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="shadow_size">20dp</dimen>
+    <dimen name="name_maxwidth">150dp</dimen>
+</resources>

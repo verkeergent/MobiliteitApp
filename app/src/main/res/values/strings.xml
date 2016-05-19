@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MobiliteitApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_info">info</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="info_dialog_title">Info</string>
+    <string name="info_dialog_text">Selecteer een item om het op de kaart weer te geven.
+                                    \n\nSwipe een item naar links of rechts om het uit de lijst te verwijderen.
+                                    \n\nHoud een item ingedrukt om extra opties te tonen</string>
+
+    <string name="filter_title">Filter opties</string>
+    <string name="filter_sorteren">Sorteren op</string>
+    <string name="sorteren_type">type</string>
+    <string name="sorteren_datum">datum</string>
+    <string name="filter_refresh">Automatisch vernieuwen</string>
+    <string name="refresh_text">refresh elke minuut</string>
+
+    <string name="username">Gebruikersnaam</string>
+    <string name="password">Wachtwoord</string>
+
+    <string name="filter_btnafmelden">Afmelden</string>
+
+    <string name="noconnection">Verbind met het internet om de data op te halen</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="timefilter_array">
+        <item>Altijd</item>
+        <item>Voorbije week</item>
+        <item>Vandaag</item>
+        <item>Voorbije uur</item>
+    </string-array>
+
+    <string-array name="logout_array">
+        <item>Afmelden</item>
+    </string-array>
+
+</resources>
